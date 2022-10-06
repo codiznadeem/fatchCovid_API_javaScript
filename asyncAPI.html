@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="loaction-main">
+        <section class="loaction-section">
+            <section class="loaction-heading-section"> 
+                <div class="loaction-heading">
+                    <h3>Covid Fatch API</h3>
+                    <br>
+                </div>
+            </section>
+            <div class="container">
+                <div class="col-item-location">
+                    <div class="location-text-data">
+                        <h3>Country</h3>
+                        <h5 id="CountryName"></h5>
+                    </div>
+                </div>
+                <div class="col-item-location">
+                    <div class="location-text-data">
+                        <h3>Total Confirmed</h3>
+                        <h5 id="TotalConfirmed"></h5>
+                    </div>
+                </div>
+                <div class="col-item-location">
+                    <div class="location-text-data">
+                        <h3>Total Deaths</h3>
+                        <h5 id="TotalDeaths"></h5>
+                    </div>
+                </div>
+                <div class="col-item-location">
+                    <div class="location-text-data">
+                        <h3>NewDeaths</h3>
+                        <h5 id="NewDeaths"></h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+
+<script>
+    async function getAPIData(){
+       const apiJson = await fetch('https://api.covid19api.com/summary');
+       const apiData = await apiJson.json();
+       setData = apiData.Countries[77];
+    console.log(setData);
+       document.getElementById('CountryName').innerText = setData.Country;
+       document.getElementById('TotalConfirmed').innerText = setData.TotalConfirmed;
+       document.getElementById('TotalDeaths').innerText = setData.TotalDeaths;
+       document.getElementById('NewDeaths').innerText = setData.NewDeaths;
+
+    }
+getAPIData();
+</script>

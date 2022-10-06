@@ -1,0 +1,100 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.loaction-main {
+    margin: 100px 0;
+}
+.loaction-heading-section {
+    text-align: center;
+}
+section.loaction-section .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.col-item-location {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 30px 30px;
+    box-shadow: 0 2px 8px #dfdfdf;
+    max-width: 300px;
+    margin: 10px 10px 20px;
+    text-align: center;
+}
+.location-img-box {
+    margin-right: 10px;
+}
+.location-img-box img {
+    width: 80px;
+}
+.floating {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.location-text-data h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.location-text-data h5 {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-family: sans-serif;
+    line-height: 22px;
+}
+
+.location-text-data label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+section.our-location-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.location-img-box {
+    margin-right: 10px;
+}
+.location-img-box img {
+    width: 80px;
+}
+section.our-location-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.loaction-text-map {
+    color: #00a66c;
+    font-size: 13px;
+    margin-right: 8px;
+    line-height: 32px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+.zomato-box svg {
+    width: 80px;
+    height: 30px;
+}
+.our-location-map a {
+    color: #f03800;
+    text-decoration: none;
+}
+.our-location-map a .loaction-map {
+    max-width: 28px;
+}
+.location-text-data img {
+    width: 100%;
+    max-width: 13px;
+    margin: 0 5px;
+}
